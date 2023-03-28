@@ -20,18 +20,12 @@ struct RoundedIconButton: View {
                 action()
             }
         }label: {
-            HStack {
-                Image(systemName: symbolName)
-                    .foregroundColor(foregroundColor)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                Text("Button")
-                    .foregroundColor(foregroundColor)
-                    .font(.title)
-                    .fontWeight(.bold)
-            }
+            Label(text, systemImage: symbolName)
             .padding()
+            .foregroundColor(foregroundColor)
             .background(backgroundColor)
+            .font(.title)
+            .fontWeight(.semibold)
             .cornerRadius(40)
         }
     }
