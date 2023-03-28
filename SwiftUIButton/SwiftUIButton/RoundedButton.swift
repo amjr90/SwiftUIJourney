@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RoundedButton: View {
     let text: String
+    var foregroundColor: Color = .white
+    var backgroundColor: Color = .blue
     var action: (()->()?)? = nil
     
     var body: some View {
@@ -21,11 +23,11 @@ struct RoundedButton: View {
                 .fontWeight(.bold)
                 .font(.title)
                 .padding()
-                .background(Color.purple)
+                .background(backgroundColor)
                 .cornerRadius(40)
-                .foregroundColor(.white)
+                .foregroundColor(foregroundColor)
                 .padding(10)
-                .overlay{RoundedRectangle(cornerRadius: 40).stroke(.purple, lineWidth: 5)}
+                .overlay{RoundedRectangle(cornerRadius: 40).stroke(backgroundColor, lineWidth: 5)}
             
         }
     }
