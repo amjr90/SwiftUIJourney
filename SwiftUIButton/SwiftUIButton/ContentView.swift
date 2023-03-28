@@ -15,6 +15,8 @@ struct ContentView: View {
             }
             
             CircleIconButton(symbolName: "trash")
+            
+            RoundedIconButton(text: "button")
         }
         .padding()
     }
@@ -25,3 +27,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
