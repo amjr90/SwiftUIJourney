@@ -11,6 +11,8 @@
 		2D6A52E629D34CE300C21454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A52E529D34CE300C21454 /* ContentView.swift */; };
 		2D6A52E829D34CE400C21454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A52E729D34CE400C21454 /* Assets.xcassets */; };
 		2D6A52EB29D34CE400C21454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6A52EA29D34CE400C21454 /* Preview Assets.xcassets */; };
+		2D6A52F229D3501F00C21454 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A52F129D3501F00C21454 /* CardView.swift */; };
+		2D6A52F429D37D3800C21454 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A52F329D37D3800C21454 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2D6A52E529D34CE300C21454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D6A52E729D34CE400C21454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D6A52EA29D34CE400C21454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D6A52F129D3501F00C21454 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2D6A52F329D37D3800C21454 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				2D6A52E329D34CE300C21454 /* SwiftUIScrollViewApp.swift */,
 				2D6A52E529D34CE300C21454 /* ContentView.swift */,
+				2D6A52F129D3501F00C21454 /* CardView.swift */,
 				2D6A52E729D34CE400C21454 /* Assets.xcassets */,
 				2D6A52E929D34CE400C21454 /* Preview Content */,
+				2D6A52F329D37D3800C21454 /* HeaderView.swift */,
 			);
 			path = SwiftUIScrollView;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6A52E629D34CE300C21454 /* ContentView.swift in Sources */,
+				2D6A52F229D3501F00C21454 /* CardView.swift in Sources */,
 				2D6A52E429D34CE300C21454 /* SwiftUIScrollViewApp.swift in Sources */,
+				2D6A52F429D37D3800C21454 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
