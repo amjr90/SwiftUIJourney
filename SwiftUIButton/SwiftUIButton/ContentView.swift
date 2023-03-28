@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 15) {
+            RoundedButton(text: "button") {
+                print("rounded button")
+            }
+            
+            CircleIconButton(symbolName: "trash")
         }
         .padding()
     }
