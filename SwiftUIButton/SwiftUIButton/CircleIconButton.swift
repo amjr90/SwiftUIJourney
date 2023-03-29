@@ -22,10 +22,10 @@ struct CircleIconButton: View {
             Image(systemName: symbolName)
                 .padding()
                 .background(backgroundColor)
-                .clipShape(Circle())
                 .font(.largeTitle)
                 .foregroundColor(foreGroundColor)
         }
+        .buttonStyle(CircleButtonStyle())
     }
 }
 

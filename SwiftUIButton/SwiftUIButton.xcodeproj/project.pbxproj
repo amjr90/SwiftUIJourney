@@ -17,6 +17,7 @@
 		2D6A531929D3B70800C21454 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A531829D3B70800C21454 /* GradientButton.swift */; };
 		2D6A531B29D4500F00C21454 /* GradientBackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A531A29D4500F00C21454 /* GradientBackgroundStyle.swift */; };
 		2D6A531D29D451D900C21454 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A531C29D451D900C21454 /* StyledButton.swift */; };
+		2D6A531F29D4532300C21454 /* CircleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6A531E29D4532300C21454 /* CircleButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2D6A531829D3B70800C21454 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		2D6A531A29D4500F00C21454 /* GradientBackgroundStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundStyle.swift; sourceTree = "<group>"; };
 		2D6A531C29D451D900C21454 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		2D6A531E29D4532300C21454 /* CircleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				2D6A531329D3B28400C21454 /* RoundedIconButton.swift */,
 				2D6A531829D3B70800C21454 /* GradientButton.swift */,
 				2D6A531C29D451D900C21454 /* StyledButton.swift */,
+				2D6A531E29D4532300C21454 /* CircleButtonStyle.swift */,
 			);
 			path = SwiftUIButton;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				2D6A531229D3AEE600C21454 /* CircleIconButton.swift in Sources */,
 				2D6A531929D3B70800C21454 /* GradientButton.swift in Sources */,
 				2D6A531429D3B28400C21454 /* RoundedIconButton.swift in Sources */,
+				2D6A531F29D4532300C21454 /* CircleButtonStyle.swift in Sources */,
 				2D6A530429D3837F00C21454 /* ContentView.swift in Sources */,
 				2D6A531029D3AC8D00C21454 /* RoundedButton.swift in Sources */,
 				2D6A530229D3837F00C21454 /* SwiftUIButtonApp.swift in Sources */,
