@@ -42,6 +42,12 @@ struct ContentView: View {
                     .buttonStyle(.bordered)
                     .controlSize(.large)
                 }
+                
+                Button("Delete", role: .destructive) {
+                    print("Delete")
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
             }
             .padding()
         }
