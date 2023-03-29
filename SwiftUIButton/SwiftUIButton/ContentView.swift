@@ -17,6 +17,10 @@ struct ContentView: View {
             CircleIconButton(symbolName: "trash")
             
             RoundedIconButton(text: "button")
+            
+            GradientButton(text: "button", symbolName: "circle.fill", colors: [.blue, .green],startPoint: .topLeading, endPoint: .bottomTrailing, shadow: true, maxWidth: .infinity)
+                
+            
         }
         .padding()
     }
