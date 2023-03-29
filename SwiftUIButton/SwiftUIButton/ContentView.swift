@@ -19,6 +19,8 @@ struct ContentView: View {
             RoundedIconButton(text: "button")
             
             GradientButton(text: "button", symbolName: "circle.fill", colors: [.blue, .green],startPoint: .topLeading, endPoint: .bottomTrailing, shadow: true, maxWidth: .infinity)
+            
+            StyledButton(text: "button", symbolName: "circle")
                 
             
         }
