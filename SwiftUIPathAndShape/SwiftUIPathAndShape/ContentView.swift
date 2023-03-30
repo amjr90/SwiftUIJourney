@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            RectangleShape()
-            DomeRectangleShape()
-        }
+        
+        //            RectangleShape()
+        //            DomeRectangleShape()
+        PieChart()
+        
     }
 }
 
@@ -58,6 +59,44 @@ struct DomeRectangleShape: View {
                 path.closeSubpath()
             }
             .stroke(.black, lineWidth: 3)
+        }
+    }
+}
+
+struct PieChart: View {
+    var body: some View {
+        ZStack {
+            Path(){path in
+                path.move(to: CGPoint(x: 200, y: 200))
+                path.addArc(center: CGPoint(x: 200, y: 200), radius: 100, startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true)
+            }
+            .fill(.yellow)
+            
+            Path(){path in
+                path.move(to: CGPoint(x: 200, y: 200))
+                path.addArc(center: CGPoint(x: 200, y: 200), radius: 100, startAngle: .degrees(180), endAngle: .degrees(100), clockwise: true)
+            }
+            .fill(.cyan)
+            
+            Path(){path in
+                path.move(to: CGPoint(x: 200, y: 200))
+                path.addArc(center: CGPoint(x: 200, y: 200), radius: 100, startAngle: .degrees(100), endAngle: .degrees(70), clockwise: true)
+            }
+            .fill(.blue)
+            
+            Path(){path in
+                path.move(to: CGPoint(x: 210, y: 205))
+                path.addArc(center: CGPoint(x: 210, y: 205), radius: 100, startAngle: .degrees(70), endAngle: .degrees(0), clockwise: true)
+            }
+            .fill(.purple)
+            .shadow(radius: 10)
+            .overlay {
+                Text("%25")
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .offset(x: 70, y: -140)
+                
+            }
         }
     }
 }
