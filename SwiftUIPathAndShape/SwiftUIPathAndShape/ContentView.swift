@@ -8,22 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var purpleGradient = LinearGradient(gradient: Gradient(colors: [ Color(red: 207/255, green: 150/255, blue: 207/255), Color(red: 107/255, green: 116/255,blue: 179/255) ]), startPoint: .trailing, endPoint: .leading)
+    
     var body: some View {
-        
-        //        RectangleShape()
-        //        DomeRectangleShape()
-        //        PieChart()
-        Button(action: {
-            // Action to perform
-        }) {
-            Text("Test")
-                .font(.system(.title, design: .rounded))
-                .bold()
-                .foregroundColor(.white)
-                .frame(width: 250, height: 50)
-                .background(Dome().fill(Color.red))
-        }
-        
+        Circle()
+            .stroke(Color(.systemGray6), lineWidth: 20)
+            .frame(width: 300, height: 300)
+            .overlay {
+                Circle()
+                    .trim(from: 0, to: 0.4)
+                    .stroke(purpleGradient, lineWidth: 10)
+                    .rotationEffect(Angle(degrees: 180))
+                    .overlay {
+                        VStack {
+                            Text("85%")
+                                .font(.system(size: 80, weight: .bold, design: .rounded))
+                                .foregroundColor(.gray)
+                            Text("Complete")
+                                .font(.system(.body, design: .rounded))
+                                .bold()
+                                .foregroundColor(.gray)
+                        }
+                    }
+            }
     }
 }
 
