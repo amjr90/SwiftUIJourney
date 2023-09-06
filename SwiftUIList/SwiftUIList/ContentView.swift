@@ -39,11 +39,15 @@ struct ContentView: View {
             if (0...1).contains(index){
                 FullImageRow(restaurant: restaurants[index])
                     .listRowSeparatorTint(.red)
-            }else{
+            } else if (1...restaurants.count-2).contains(index){
                 BasicImageRow(restaurant: restaurants[index])
-                    .listRowSeparator(.hidden)
+                    .listRowSeparatorTint(.red)
+            } else{
+                FullImageRow(restaurant: restaurants[index])
+                    .listRowSeparatorTint(.red)
             }
         }
+        .listStyle(.plain)
     }
 }
 
